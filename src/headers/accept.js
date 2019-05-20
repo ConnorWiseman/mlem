@@ -1,5 +1,5 @@
 /**
- * @file src/accept.js
+ * @file src/headers/accept.js
  */
 'use strict';
 

@@ -1,5 +1,5 @@
 /**
- * @file src/headers.js
+ * @file src/headers/join.js
  */
 'use strict';
 

@@ -1,5 +1,5 @@
 /**
- * @file test/accept.spec.js
+ * @file test/headers/accept.spec.js
  */
 'use strict';
 
@@ -31,7 +31,7 @@ const crypto = Object.create(null);
 crypto.createHash = sinon.stub().returns(hash);
 
 // The file being tested.
-const accept = proxyquire('../src/accept.js', { crypto });
+const accept = proxyquire('../../src/headers/accept.js', { crypto });
 
 test.afterEach(t => {
   crypto.createHash.resetHistory();
