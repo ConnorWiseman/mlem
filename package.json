@@ -1,0 +1,45 @@
+{
+  "name": "mlem",
+  "version": "0.0.0",
+  "description": "A lightweight WebSocket server.",
+  "author": "Connor Wiseman",
+  "license": "MIT",
+  "main": "src/index.js",
+  "files": [
+    "src/**/*.js"
+  ],
+  "scripts": {
+    "lint": "eslint src/",
+    "test": "npm run lint && nyc ava"
+  },
+  "engines": {
+    "node": ">=8.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConnorWiseman/mlem.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ConnorWiseman/mlem/issues"
+  },
+  "homepage": "https://github.com/ConnorWiseman/mlem#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^1.4.1",
+    "eslint": "^5.16.0",
+    "nyc": "^14.1.1",
+    "proxyquire": "^2.1.0",
+    "sinon": "^7.3.2"
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ]
+  },
+  "ava": {
+    "files": [
+      "test/**/*.spec.js"
+    ]
+  }
+}
